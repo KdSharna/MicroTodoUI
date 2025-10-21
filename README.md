@@ -6,4 +6,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Run npm install
 4. RUn npm run build
 5. Copy the Generated artifacts in nginx server
+# Test GitHub Actions 🚀
 
