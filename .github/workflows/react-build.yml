@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: todo-ui
-      IMAGE_TAG: v2
+      IMAGE_NAME: todo_ui_app
+      IMAGE_TAG: v3
       ACR_NAME: akscon1
       ACR_LOGIN_SERVER: akscon1.azurecr.io
 
