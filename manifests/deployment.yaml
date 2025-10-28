@@ -13,7 +13,7 @@ spec:
         app: todo-ui
     spec:
       containers:
-      - name: todo-ui:v2
+      - name: todo-ui
         image: akscon1.azurecr.io/todo-ui:v2
         ports:
         - containerPort: 80
