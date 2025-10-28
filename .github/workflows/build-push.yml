@@ -28,9 +28,12 @@ jobs:
           tenant-id: 5b3b65b4-1fd5-4b53-a690-8f7e5568d890
           subscription-id: 4a56d5b3-94c0-47a0-ab55-850ee42f58bd
 
-      - name: Log in to ACR
+      # - name: Log in to ACR
+      #   run: |
+          # az acr login --name $ACR_NAME
+      - name: Log in to ACR using Admin Credentials
         run: |
-          az acr login --name $ACR_NAME
+          echo ${{ secrets.ACR_PASSWORD }} | docker login $ACR_LOGIN_SERVER -u ${{ secrets.ACR_USERNAME }} --password-stdin
 
       - name: Build Docker Image
         run: |
