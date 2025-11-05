@@ -22,9 +22,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Azure Login
-        uses: Azure/login@v2.3.0
+        uses:  Azure/login@v2
+        # uses: Azure/login@v2.3.0
         with:
-          client-id: 71e2e85b-ef36-4d69-9673-2c8e567b697a
+          auth-type: oidc
+          # client-id: 71e2e85b-ef36-4d69-9673-2c8e567b697a
           tenant-id: e36e2232-cac4-497a-9243-862b9b46221b
           subscription-id: 06f4c176-e41e-424a-bfc2-cb4b3a4e5fe5
 
