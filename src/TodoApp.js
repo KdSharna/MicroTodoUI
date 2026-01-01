@@ -7,7 +7,7 @@ import config from './config'; // Import the config file with environment variab
 
 // Use the config to define API URLs
 const GET_TASKS_API_BASE_URL = "http://10.0.52.214";
-const DELETE_TASK_API_BASE_URL = "http://10.0.21.219";
+const DELETE_TASK_API_BASE_URL = "http://10.0.92.235";
 const CREATE_TASK_API_BASE_URL = "http://10.0.238.19";
 
 //Update Task Functionality is Work In Progress
