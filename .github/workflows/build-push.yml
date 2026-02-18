@@ -24,9 +24,9 @@ jobs:
       - name: Azure Login using OIDC
         uses: Azure/login@v2.3.0
         with:          
-          client-id: a9b48da1-64d7-4293-bb58-b24ce524b145
-          tenant-id: cd6658bd-2f1a-4baa-b43c-c8f719702323
-          subscription-id: 9e5164c3-5dce-42e1-abfe-6be582de11d8
+          client-id: 7da6124f-9892-493e-8ab8-6c596ad717c9
+          tenant-id: d031778b-8f47-4245-a0dc-949ea47c63ab
+          subscription-id: 05fdc691-9f29-4931-b03c-5e0d065dc0b6
 
       - name: Log in to ACR
         run: |
