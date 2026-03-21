@@ -14,8 +14,8 @@ jobs:
     env:
       IMAGE_NAME: todo-ui
       IMAGE_TAG: v1
-      ACR_NAME: akscon101
-      ACR_LOGIN_SERVER: akscon101.azurecr.io
+      ACR_NAME: akscon1
+      ACR_LOGIN_SERVER: akscon1.azurecr.io
 
     steps:
       - name: Checkout code
@@ -24,9 +24,9 @@ jobs:
       - name: Azure Login using OIDC
         uses: Azure/login@v2.3.0
         with:          
-          client-id: 7da6124f-9892-493e-8ab8-6c596ad717c9
-          tenant-id: d031778b-8f47-4245-a0dc-949ea47c63ab
-          subscription-id: 05fdc691-9f29-4931-b03c-5e0d065dc0b6
+          client-id: e1438469-06c5-448d-88c2-29ab744032c2
+          tenant-id: 3d084a01-eb62-47fe-bb1e-748c68591432
+          subscription-id: cfc0d37c-0341-4d06-bcf3-35b93770a2ee
 
       - name: Log in to ACR
         run: |
