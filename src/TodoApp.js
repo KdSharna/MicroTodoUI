@@ -21,7 +21,7 @@ function TodoApp() {
 
     const fetchTasks = async () => {
         try {
-            const response = await axios.get(`${GET_TASKS_API_BASE_URL}/`);
+            const response = await axios.get(`${GET_TASKS_API_BASE_URL}/tasks`);
             setTasks(response.data);
         } catch (error) {
             console.error('Error fetching tasks', error);
@@ -30,7 +30,7 @@ function TodoApp() {
 
     const createTask = async () => {
         try {
-            await axios.delete(`${DELETE_TASK_API_BASE_URL}/${taskId}`);
+            await axios.post(`${CREATE_TASK_API_BASE_URL}/tasks`, newTask);
             fetchTasks();
             setNewTask({ title: '', description: '' });
         } catch (error) {
